@@ -1,0 +1,29 @@
+{
+  "name": "shop99_api",
+  "version": "1.0.0",
+  "description": "Shop99 E-Commerce Api",
+  "main": "server.js",
+  "type":"module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seeds": "node src/scripts/seeder.js"
+  },
+  "author": "Aderemi Abiodun",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.8.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.3",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "zod": "^4.1.12"
+  }
+}
