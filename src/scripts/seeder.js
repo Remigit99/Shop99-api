@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import products from "../data/products";
-import Product from "../models/productModel";
+import products from "../data/products.js";
+import Product from "../models/productModel.js";
 import { connectDB } from "../config/db.js";
 
 dotenv.config();
@@ -42,5 +42,5 @@ const destroyData = async () => {
 if (process.argv[2] === '-d') {
   destroyData(); 
 } else {
-  importData(); 
+  seedProducts(); 
 }

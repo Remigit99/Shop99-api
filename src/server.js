@@ -3,6 +3,8 @@ import cors from 'cors';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 import { connectDB } from './config/db.js';
+import productRoutes from './routes/productRoutes.js';
+
 
 
 
@@ -14,6 +16,9 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+// Routes
+app.use('/api/products', productRoutes);
+
 
 
 
